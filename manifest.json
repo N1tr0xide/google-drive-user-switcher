@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Google Drive User Switcher",
+  "version": "1.0",
+  "description": "Reloads Google Drive with a chosen user email.",
+  "permissions": [
+    "tabs",
+    "storage",
+    "*://drive.google.com/*",
+    "*://accounts.google.com/*"
+  ],
+  "browser_action": {
+    "default_title": "Switch Drive Account",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  }
+}

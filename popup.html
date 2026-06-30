@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+            body {
+                font-family: sans-serif;
+                width: 300px;
+            }
+
+            #accounts {
+                margin-bottom: 20px;
+            }
+
+            .account {
+                padding: 8px;
+                border: 1px solid #ccc;
+                margin-bottom: 6px;
+                cursor: pointer;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .account:hover {
+                background: #eee;
+            }
+
+            .delete {
+                color: red;
+                font-weight: bold;
+                cursor: pointer;
+                margin-left: 10px;
+            }
+
+            .addAccountSection {
+                display: flex;
+                flex-direction: column;   /* stack vertically */
+                text-align: center;
+            }
+
+            p, input, button{
+                display: block;          /* so margin auto works */
+                width: 90%;              /* same width for both */
+                max-width: 260px;
+                margin: 0 auto 8px auto; /* horizontally centered */
+                box-sizing: border-box;
+            }
+
+            p {
+                text-align: center;
+            }
+
+            button {
+                padding: 8px;
+            }
+    </style>
+</head>
+<body>
+    <h3>Google Drive Account Switcher</h3>
+    <div id="accounts">No Accounts</div>
+
+    <div id="addAccountSection">
+        <p>Add Account</p>
+        <input id="emailInput" placeholder="Email">
+        <button id="addBtn">Add Account</button>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
